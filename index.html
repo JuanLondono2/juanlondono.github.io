@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="estilopag.css">
+<title>Juan Londoño</title>
+<style></style>
+</head>
+
+<body>
+
+<!--Este es el menú de navegación de la página web-->
+
+<section class="menu_principal">
+    <nav>
+    <ul class="menu">
+        <li><a href="#perfil">Perfil</a>
+        <li><a href="#experiencia">Experiencia</a>
+        <li><a href="#educacion">Educacion</a>
+        <li><a href="#contacto">Contacto</a>
+        <li><a href="#contactame">Contáctame</a></li>
+    </ul>
+    </nav>
+
+<!--Esto permite crear un contenedor para ubicar la barra, los scroll-page permite subdividir el contenedor principal-->
+<scroll-container>
+    <scroll-page id="perfil">
+        <div>
+            <figure>
+                <img src="Foto.jpg" alt="">
+            </figure>
+        </div>
+
+        <div>
+            <h1>Juan Sebastian Londoño</h1>
+            <br>
+            <h2>Economista</h2>
+            <br>
+            <p>
+            conomista con conocimientos en desarrollo WEB con HTML5 y CSS
+            </p>
+            </div>
+            
+    </scroll-page>
+
+    <scroll-page id="experiencia">
+        <div>
+            <h3>Analista Operativo - Fondo Nacional de Garantías</h3>
+            <p>Analista operativo en la subdirección del programa unidos por Colombia</p>
+            <h3>Analista de Crédito - Banco AV Villas</h3>
+            <p>Analista de credito en la Gerencia Nacional de Crédito Corporativo</p>
+            <h3>Practivcante - Banco AV Villas</h3>
+            <p>Practicante en la Gerencia Nacional de Crédito Corporativo</p>
+        </div>            
+    </scroll-page>
+
+    <scroll-page id="educacion">
+        <div>
+            <h3>Economía - Universidad Santo Tomás</h3>
+            <p>Pregrado en economía en la Universidad Santo Tomás de Colombia, cursado entre 2015 y 2020</p>
+            <h3>Intercambio - Universidad Pública de Navarra</h3>
+            <p>Intercambio en el semestre de primavera en la Universidad Pública de Navarra en Pamplona, España</p>
+
+        </div>
+    </scroll-page>
+
+    <scroll-page id="contacto">
+        <div>
+            <h3>Telefono</h3>
+            <p>+57 3164508123</p>
+            <h3>Correo Electronico</h3>
+            <p>J.sebastian04.L@gmail.com</p>
+            <h3><a href="https://www.linkedin.com/in/juan-sebastian-londono-col/" target="_blank">LinkedIn</a></h3>
+                
+        </div>
+
+    </scroll-page>
+
+    <scroll-page id="contactame"> 
+        <form id="contact" action="">
+                <div class="seccion-formulario">
+                    <div class="texto-contactame">
+                        <h2>Contáctame</h2>
+                        <b></b>
+                    </div>
+                        <div class="formulario">
+                        <legend>Datos personales</legend>
+                        <div class="texput">
+                        <div class="inputs">
+                            <input name='nombre' type='text' placeholder="Nombre" required/>
+                            <input name='email' type='email' placeholder="Correo" required/>
+                            <input name='subject' type='text' placeholder="Asunto" required/>
+                        </div>
+                            <!--Permite crear el recuadro para introducir el mensaje-->
+                            <textarea name="textarea" rows="10" cols="75" placeholder="Escribe Tu Mensaje"></textarea>
+                        </div>
+                        </div>
+                    <div class="button"><button>Enviar Mensaje</button></div>
+                </div>
+        </form>
+    </scroll-page>
+</scroll-container>
+
+</section>
+</body>
+</html>
